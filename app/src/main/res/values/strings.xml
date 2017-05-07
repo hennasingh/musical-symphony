@@ -1,0 +1,76 @@
+<resources>
+    <string name="app_name">Musical Symphony</string>
+    <string name="main_heading">Musical Symphony</string>
+    <string name="welcome_msg">Wecome to Musical Symphony. Select your preference and enjoy
+    one stop shop for music.</string>
+    <string name="select_mood">How is your mood today ?</string>
+    <string name="category_playlists">PlayLists</string>
+    <string name="category_musicOnDemand">Music on Demand</string>
+    <string name="category_library">Library</string>
+    <string name="category_radio">Radio</string>
+
+    <!--Playlist Layout XML -->
+    <string name="add_new_playlist">Add New</string>
+    <string name="intro_text">A person can add new lists and listen to old added ones. I plan to implement
+        either a list view or string array in string resources to maintain the list where it can be
+        retrieved and added dynamically. For now, its manual text</string>
+    <string name="playlist1">Playlist One</string>
+    <string name="playlist2">Playlist Two</string>
+
+    <!-- Music On Demand XML Layout -->
+    <string name="music_demand_msg">A person can search for music online. Will integrate a music API(soundcloud,
+        gaana etc )with the search button and a list view to display the results </string>
+    <string name="music_search">Search Music Online</string>
+    <string name="recent_search">Recent Searches</string>
+    <string name="song_search_name">Song Name</string>
+    <string name="artist_search_name">Artist Name</string>
+    <string name="song_search_msg">This screen will display recent searches done. List View, custom adapter will
+    be used to store and retrieve information.</string>
+
+    <!-- Radio XML Layout -->
+
+    <string name="radio_msg">User can select from available radio stations. Recently Played items will also
+    be displayed and different genres will be displayed. Thinking of integrating music APIs in this at later
+    stage. </string>
+
+    <!-- Library XML Layout -->
+    <string name="library_msg">This section will contain information about songs on the phone and segregate in
+    terms of artists, genre and albums. I want to create a tabular interface when clicked it shows the data
+    according to the tab clicked. </string>
+    <string name="category_artists">Artists</string>
+    <string name="category_genre">Genre</string>
+    <string name="category_albums">Albums</string>
+    <string name="category_songs">Songs</string>
+    <string name="recently_played">Recently Played</string>
+    <string name="artist_name">Artist- Judy Garland</string>
+    <string name="genre_name">Genre- Romance</string>
+    <string name="song_name">Song- Zing! went the strings of my Heart</string>
+    <string name="recently_played_msg">This section details few recently played song, clicking on a song Image will
+    go to the now Playing screen and play the song.</string>
+
+    <!-- Songs Playing XML Layout -->
+
+    <string name="now_playing">Now Playing</string>
+    <string name="now_playing_msg">This screen will display the album, song, artist that is
+    being played currently.</string>
+    <string name="timer_start">2:40</string>
+    <string name="timer_remaining">4:20</string>
+
+    <!-- Radio XML Layout -->
+
+    <string name="radio_stations">Radio Stations</string>
+    <string name="All_genres">All Genres</string>
+    <string name="genre_rock">Rock</string>
+    <string name="genre_pop">Pop</string>
+    <string name="genre_classical">Classical</string>
+    <string name="genre_electronic">Electronic</string>
+    <string name="genre_world">From Around the World</string>
+    <string name="radio_recently_msg">This below displays the channels, genres already played by user.The data will be
+    stored in json format and api usage to retrieve the same.</string>
+
+    <!-- Mood Songs XML Layout -->
+
+    <string name="mood_songs_msg">This screen will display songs as per the person mood selected.</string>
+
+
+</resources>

@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="artist.web.musicalsymphony.MainMusicalUI"
+    android:background="@drawable/gradient_image">
+
+    <RelativeLayout
+
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="@dimen/rootLayout_padding"
+    >
+
+    <ImageView
+        android:id="@+id/headerImage"
+        android:layout_width="match_parent"
+        android:scaleType="fitXY"
+        android:layout_height="@dimen/main_ui_image_height"
+        android:src="@drawable/main_ui_image"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/main_heading"
+        android:layout_alignParentRight="true"
+        android:gravity="center"
+        android:textSize="@dimen/main_heading_textSize"
+        android:textColor="@color/white"
+        android:fontFamily="cursive"
+        android:layout_marginTop="@dimen/main_heading_marginT"
+        android:layout_marginLeft="@dimen/main_heading_marginL"
+         />
+
+    <TextView
+        android:id="@+id/welcomeMsg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/headerImage"
+        style="@style/welcomeMsg"
+        android:text="@string/welcome_msg"/>
+
+    <TextView
+        android:id="@+id/selectMood"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/welcomeMsg"
+        android:text="@string/select_mood"
+        android:textColor="@color/white"
+        android:fontFamily="casual"
+        android:gravity="center_horizontal"
+        android:textSize="@dimen/mood_textSize"
+        android:padding="@dimen/mood_padding"/>
+
+    <HorizontalScrollView
+        android:id="@+id/moodScroller"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/selectMood"
+        >
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/mood_layout_marginL"
+            android:layout_marginRight="@dimen/mood_layout_marginR"
+            android:layout_marginTop="@dimen/mood_layout_marginTB"
+            android:layout_marginBottom="@dimen/mood_layout_marginTB"
+            android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/happy_face"
+            android:layout_width="@dimen/mood_image_width"
+            android:layout_height="@dimen/mood_image_height"
+            android:layout_marginLeft="@dimen/mood_image_marginL"
+            android:src="@drawable/happy_mood"/>
+
+        <ImageView
+            android:id="@+id/sad_face"
+            android:layout_width="@dimen/mood_image_width"
+            android:layout_height="@dimen/mood_image_height"
+            android:layout_marginLeft="@dimen/mood_image_marginL"
+            android:src="@drawable/sad_mood"/>
+
+            <ImageView
+                android:id="@+id/love_face"
+                android:layout_width="@dimen/mood_image_width"
+                android:layout_height="@dimen/mood_image_height"
+                android:layout_marginLeft="@dimen/mood_image_marginL"
+                android:src="@drawable/love_mood"/>
+
+            <ImageView
+                android:id="@+id/angry_face"
+                android:layout_width="@dimen/mood_image_width"
+                android:layout_height="@dimen/mood_image_height"
+                android:layout_marginLeft="@dimen/mood_image_marginL"
+                android:src="@drawable/angry_mood"/>
+
+        </LinearLayout>
+
+    </HorizontalScrollView>
+
+    <LinearLayout
+        android:id="@+id/optionButtons"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/moodScroller"
+        android:layout_marginTop="@dimen/optionBtn_layout_marginT"
+        android:layout_centerHorizontal="true"
+        android:orientation="vertical">
+
+    <Button
+        android:id="@+id/playlists"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="@style/OptionBtnStyle"
+        android:text="@string/category_playlists"/>
+
+
+        <Button
+            android:id="@+id/library"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            style="@style/OptionBtnStyle"
+            android:text="@string/category_library"/>
+
+        <Button
+            android:id="@+id/radio"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            style="@style/OptionBtnStyle"
+            android:text="@string/category_radio"/>
+
+        <Button
+            android:id="@+id/musicDemand"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            style="@style/OptionBtnStyle"
+            android:text="@string/category_musicOnDemand"/>
+
+    </LinearLayout>
+
+
+</RelativeLayout>
+</ScrollView>

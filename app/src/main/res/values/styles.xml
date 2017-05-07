@@ -1,0 +1,82 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="OptionBtnStyle">
+        <item name="android:layout_gravity">center</item>
+        <item name="android:textSize">@dimen/optionBtn_textSize</item>
+        <item name="android:background">@color/optionBtn</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:fontFamily">casual</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:padding">@dimen/optionBtn_padding</item>
+        <item name="android:layout_marginBottom">@dimen/optionBtn_marginB</item>
+        <item name="android:layout_marginStart">@dimen/optionBtn_marginLR</item>
+        <item name="android:layout_marginEnd">@dimen/optionBtn_marginLR</item>
+    </style>
+
+    <!-- Welcome Message/Intro Text on each screen explaining the purpose-->
+
+    <style name="welcomeMsg">
+        <item name="android:textSize">@dimen/welcome_msg_textSize</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:fontFamily">casual</item>
+        <item name="android:padding">@dimen/welcome_msg_padding</item>
+    </style>
+
+    <!-- name of the lists the user adds -->
+
+    <style name="playlists">
+        <item name="android:textSize">@dimen/playlist_textSize</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:fontFamily">casual</item>
+        <item name="android:paddingTop">@dimen/playlist_paddingT</item>
+
+    </style>
+
+    <!-- Category on Library XML Layout Page -->
+    <style name="library_categories">
+        <item name="android:textSize">@dimen/lib_categ_textSize</item>
+        <item name ="android:textColor">@color/white</item>
+        <item name="android:layout_marginTop">@dimen/lib_categ_marginT</item>
+        <item name="android:paddingTop">@dimen/lib_categ_paddingT</item>
+        <item name="android:drawablePadding">@dimen/categ_drawable_padding</item>
+        <item name="android:fontFamily">casual</item>
+    </style>
+
+    <style name="recently_played_songs">
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">@dimen/artist_textSize</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginTop">@dimen/recently_played_songs_marginT</item>
+    </style>
+
+    <!-- Categories in Radio XML Layout Page -->
+
+    <style name="radio_categories">
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">@dimen/radio_stations_textSize</item>
+    </style>
+
+    <style name="genre_categories">
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">@dimen/genre_textSize</item>
+        <item name="android:layout_marginBottom">@dimen/genre_marginB</item>
+
+    </style>
+
+    <!-- Song search on Music On Demand Page -->
+    <style name="song_search">
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">@dimen/song_search_textSize</item>
+        <item name="android:layout_marginStart">@dimen/song_Search_marginL</item>
+    </style>
+
+</resources>

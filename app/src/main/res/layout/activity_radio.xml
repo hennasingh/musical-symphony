@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient_image"
+    tools:context="artist.web.musicalsymphony.RadioActivity">
+
+<LinearLayout
+
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:layout_marginEnd="@dimen/root_layout_marginR"
+    android:layout_marginStart="@dimen/root_layout_marginL"
+    >
+
+    <TextView
+        android:id="@+id/welcomeMsg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="@style/welcomeMsg"
+        android:text="@string/radio_msg"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/radio_stations"
+        style="@style/radio_categories"
+        android:layout_marginTop="@dimen/station_text_marginBT"
+        android:layout_marginBottom="@dimen/station_text_marginBT"
+         />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/All_genres"
+        style="@style/radio_categories"
+        android:layout_marginBottom="@dimen/station_text_marginBT"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/genre_rock"
+        style="@style/genre_categories"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/genre_pop"
+        style="@style/genre_categories"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/genre_electronic"
+        style="@style/genre_categories"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/genre_classical"
+        style="@style/genre_categories"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/genre_world"
+        style="@style/genre_categories"/>
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/recently_played"
+        android:textColor="@color/white"
+        android:layout_marginTop="@dimen/recently_played_marginT"
+        android:layout_marginBottom="@dimen/recently_played_marginB"
+        android:textSize="@dimen/recently_played_textSize"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="@style/welcomeMsg"
+        android:text="@string/radio_recently_msg"/>
+
+
+
+
+</LinearLayout>
+</ScrollView>

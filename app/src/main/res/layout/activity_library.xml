@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient_image"
+    tools:context="artist.web.musicalsymphony.LibraryActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/root_layout_marginL">
+
+        <TextView
+            android:id="@+id/welcomeMsg"
+            style="@style/welcomeMsg"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/library_msg" />
+
+        <LinearLayout
+            android:id="@+id/catalogueLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/welcomeMsg"
+            android:orientation="vertical"
+            >
+
+
+            <TextView
+                style="@style/library_categories"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableStart="@drawable/songs_icon"
+                android:gravity="center_vertical"
+                android:text="@string/category_artists" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/category_genre"
+                style="@style/library_categories"
+                android:gravity="center_vertical"
+                android:drawableStart="@drawable/songs_icon"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/category_albums"
+                style="@style/library_categories"
+                android:gravity="center_vertical"
+                android:drawableStart="@drawable/songs_icon"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/category_songs"
+                style="@style/library_categories"
+                android:drawableStart="@drawable/songs_icon"/>
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/recently_played"
+                android:textColor="@color/white"
+                android:layout_marginTop="@dimen/recently_played_marginT"
+                android:layout_marginBottom="@dimen/recently_played_marginB"
+                android:textSize="@dimen/recently_played_textSize"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                style="@style/welcomeMsg"
+                android:text="@string/recently_played_msg"/>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/recently_played_marginB"
+                >
+
+                <ImageView
+                    android:id="@+id/played_song"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:src="@drawable/judy_icon"
+                    android:scaleType="fitXY"
+                    />
+                <TextView
+                    android:id="@+id/artist_name"
+                    android:layout_toEndOf="@id/played_song"
+                    style="@style/recently_played_songs"
+                    android:text="@string/artist_name"/>
+                <TextView
+                    android:id="@+id/genre_name"
+                    style="@style/recently_played_songs"
+                    android:layout_toEndOf="@id/played_song"
+                    android:layout_below="@id/artist_name"
+                    android:text="@string/genre_name"/>
+                <TextView
+                    android:id="@+id/song_name"
+                    style="@style/recently_played_songs"
+                    android:layout_toEndOf="@id/played_song"
+                    android:layout_below="@id/genre_name"
+                    android:text="@string/song_name"/>
+
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/recently_played_marginB"
+                >
+
+                <ImageView
+                    android:id="@+id/played_song1"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:src="@drawable/judy_icon"
+                    android:scaleType="fitXY"
+                    />
+                <TextView
+                    android:id="@+id/artist_name1"
+                   style="@style/recently_played_songs"
+                    android:layout_toEndOf="@id/played_song1"
+                    android:text="@string/artist_name"/>
+                <TextView
+                    android:id="@+id/genre_name1"
+                   style="@style/recently_played_songs"
+                    android:layout_toEndOf="@id/played_song1"
+                    android:layout_below="@id/artist_name1"
+                    android:text="@string/genre_name"/>
+                <TextView
+
+                    style="@style/recently_played_songs"
+                    android:layout_toEndOf="@id/played_song1"
+                    android:layout_below="@id/genre_name1"
+                    android:text="@string/song_name"/>
+
+
+            </RelativeLayout>
+
+
+        </LinearLayout>
+
+
+    </RelativeLayout>
+</ScrollView>

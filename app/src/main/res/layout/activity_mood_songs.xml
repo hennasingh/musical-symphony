@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient_image"
+    tools:context="artist.web.musicalsymphony.HappySongs">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginEnd="@dimen/root_layout_marginR"
+        android:layout_marginStart="@dimen/root_layout_marginL"
+      >
+        <TextView
+            android:id="@+id/welcomeMsg"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            style="@style/welcomeMsg"
+            android:text="@string/mood_songs_msg"/>
+
+        <ImageView
+            android:id="@+id/mood_image"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:layout_below="@id/welcomeMsg"/>
+
+        <ListView
+            android:layout_below="@id/mood_image"
+            android:id="@+id/songs_list"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:cacheColorHint="@color/white"
+            android:orientation="vertical"/>
+
+        </RelativeLayout>
+
+</RelativeLayout>

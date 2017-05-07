@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="artist.web.musicalsymphony.SongPlaying"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient_image">
+
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="@dimen/root_layout_marginL"
+    android:layout_marginRight="@dimen/root_layout_marginR">
+
+    <TextView
+        android:id="@+id/welcomeMsg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/now_playing_msg"
+        style="@style/welcomeMsg"/>
+
+    <SeekBar
+        android:id="@+id/musicTimer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/welcomeMsg"
+        android:max="100"
+        android:progress="50" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/timer_start"
+        android:textSize="@dimen/timer_textSize"
+        android:textColor="@color/white"
+        android:layout_below="@id/musicTimer"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/timer_remaining"
+        android:layout_below="@id/musicTimer"
+        android:textSize="@dimen/timer_textSize"
+        android:textColor="@color/white"
+        android:layout_alignParentEnd="true"
+        />
+
+    <ImageView
+        android:id="@+id/songImage"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:layout_below="@id/musicTimer"
+        android:layout_marginTop="@dimen/songImg_marginBT"
+        android:layout_marginBottom="@dimen/songImg_marginBT"
+        android:scaleType="centerInside"
+        android:src="@drawable/judy_icon"/>
+
+    <TextView
+        android:id="@+id/song_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/song_name_marginB"
+        android:marqueeRepeatLimit="marquee_forever"
+        android:textColor="@color/white"
+        android:ellipsize="marquee"
+        android:gravity="center_horizontal"
+        android:focusable="true"
+        android:singleLine="true"
+        android:focusableInTouchMode="true"
+        android:scrollHorizontally="true"
+        android:layout_below="@id/songImage"/>
+
+    <LinearLayout
+        android:id="@+id/mediaPlayer_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/song_name"
+        android:orientation="horizontal"
+        >
+
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="75dp"
+            android:layout_weight="1"
+            android:src="@drawable/back_icon"/>
+
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="75dp"
+            android:layout_weight="1"
+            android:src="@drawable/play_icon"/>
+
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="75dp"
+            android:src="@drawable/forward_icon"
+            android:layout_weight="1"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/mediaPlayer_layout"
+        android:layout_marginTop="@dimen/volume_layout_marginT"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        >
+
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_weight="1"
+            android:src="@drawable/minus_icon"/>
+
+        <SeekBar
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="3"
+            android:max="100"
+            android:progress="80"/>
+
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:src="@drawable/plus_icon"
+            android:layout_weight="1"/>
+
+    </LinearLayout>
+
+</RelativeLayout>
+</ScrollView>
